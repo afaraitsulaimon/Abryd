@@ -40,14 +40,14 @@ const NavBar = () => {
               
     
 
-        <BriefList>
+        <BriefList >
                 
 
                 <li><Link to='/about-us'>About Us</Link></li>
                 <li><Link to='/contact-us'>Contact Us</Link></li>
-                <li><Link to='/cac-reg'>CAC Reg.</Link></li>
+                <li><Link to='/company-reg'>CAC Reg.</Link></li>
                 <li><Link to='/book-keeping'>Book-Keeping</Link></li>
-                <li><Link to='/procurement'>Procurement</Link></li>
+                <li><Link to='/procurement-services'>Procurement</Link></li>
 
         </BriefList>
       {listDrop && !click ? <Dropdown/> : ""}
