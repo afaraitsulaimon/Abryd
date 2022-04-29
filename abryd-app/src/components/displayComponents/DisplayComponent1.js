@@ -4,6 +4,7 @@ import Snowfall from 'react-snowfall';
 import NavBar from '../NavBar';
 import './display1.css';
 import { motion } from "framer-motion"
+import { Link } from 'react-router-dom';
 
 
 
@@ -58,7 +59,7 @@ const DisplayComponent1 = () => {
                     }}
                     style={{ backgroundColor:'rgba(119, 113,112,0.8)', cursor:'pointer', display:'flex', justifyContent:'center', alignItems:'center' }}>
                         
-                        <p style={{ fontSize:'1.5em', fontWeight:'bold' }}>Book <br/> Keeping</p>
+                        <Link to={"/book-keeping"} style={{ textDecoration:'none', color:'white', textAlign:'center', fontSize:'1.5em', fontWeight:'bold' }}>Book <br/> Keeping</Link>
                     </motion.div>
 
                     

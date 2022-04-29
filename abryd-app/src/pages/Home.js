@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import NavBar from "../components/NavBar";
 import styled from "styled-components";
 import DisplayComponent1 from "../components/displayComponents/DisplayComponent1";
 import DisplayComponent2 from "../components/displayComponents/DisplayComponent2";
@@ -11,11 +10,14 @@ const HomePage = () => {
   let [counter, setCounter] = useState(1);
 
 
+  const changingContent = () => {
+
+
     setInterval(() => { 
+
       setCounter(counter+1);
 
-        if (counter === 1) {
-          
+        if (counter === 0) {
           displayState(<DisplayComponent1/>);
 
         } else if (counter === 2) {
@@ -29,11 +31,17 @@ const HomePage = () => {
 
           displayState(<DisplayComponent1/>);
           setCounter(1);
-          clearInterval();
         }
 
-    },20000);
+    },5000);
+  }
 
+
+    useEffect(() => {
+
+      changingContent();
+      clearInterval();
+    });
 
   return (
     <>

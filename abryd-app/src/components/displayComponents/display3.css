@@ -1,0 +1,28 @@
+.containerDisplay3{
+ 
+
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../images/procurement.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 568px) {
+    .containerDisplay3{
+        height: auto;
+
+    }
+
+
+    .containerDisplay3 div:last-child {
+            margin-bottom: 50px;
+        }
+
+    .containerDisplay3 .innerContainer{
+        height: auto;
+        background-size: cover;
+    
+    }
+  }
